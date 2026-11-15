@@ -19,7 +19,22 @@ No settings, no themes, no autosave. On purpose.
 
 ## With agents
 
-When an agent rewrites a file you have open, Plain reloads it. Unsaved edits stay yours.
+- **See what the agent changed.** When an agent rewrites a file, Plain shows what changed since you last read it: new words in green, a small red mark where text was removed (click it to put the text back). ⌥⌘G goes to the next change, ⌥⌘Y marks them as seen. What you last read stays on your Mac.
+- **Keep your unsaved edits.** When the agent changed other words than yours, its changes merge into your text. When you both changed the same words, Plain leaves your text alone and asks when you save.
+- **Leave notes for the agent.** Select a passage, ⌥⌘M, type. The note goes in the file as `<!-- note: … -->`. Then tell your agent "do my notes".
+- **Let the agent see what you changed** since its last write:
+
+  ```
+  /Applications/Plain.app/Contents/MacOS/Plain --changes plan.md
+  ```
+
+- **Files that move stay open.** A file an agent renames or moves keeps its tab.
+- **Links like `plan.md:42`** open at that line. ⇧⌘O jumps to a heading.
+- **Use Plain as your editor** for git commit messages, and for Ctrl-G in Claude Code and Codex:
+
+  ```
+  export EDITOR="/Applications/Plain.app/Contents/MacOS/Plain --wait"
+  ```
 
 An agent can file a bug for you:
 
