@@ -4,14 +4,17 @@ A very lightweight native Mac app to read and edit Markdown. Free. By [Clément 
 
 **[Download Plain](https://github.com/clementrog/plain/releases/latest/download/Plain.zip)** for macOS 26 on Apple Silicon. Signed and notarized. Unzip it and drag it to Applications.
 
-![Plain showing its Welcome tab](plain.png)
+![Plain showing what an agent changed in a trip plan: new words in green, red marks where text was removed, a note, and the bar with 4 changes](plain.png)
 
 ## What it does
 
 - Shows Markdown without its markers. The file stays exactly what you typed, byte for byte.
+- Shows only the markers under the caret: the stars of the bold word you are in, not the whole line.
+- Puts the text in a column about 80 characters wide. A wide table can use the whole window.
 - Saves only when you press ⌘S.
-- One window, one tab per file. ⌘← and ⌘→ switch tabs.
+- One window, one tab per file. ⌘← and ⌘→ switch tabs. Double-click a tab to rename its file.
 - Draws tables. Type `/table` then Return to make one.
+- System Mono or System Sans, in View > Font.
 - Opens YAML too.
 - Never uses the network.
 
@@ -19,8 +22,8 @@ No settings, no themes, no autosave. On purpose.
 
 ## With agents
 
-- **See what the agent changed.** When an agent rewrites a file, Plain shows what changed since you last read it: new words in green, a small red mark where text was removed (click it to put the text back). ⌥⌘G goes to the next change, ⌥⌘Y marks them as seen. What you last read stays on your Mac.
-- **Keep your unsaved edits.** When the agent changed other words than yours, its changes merge into your text. When you both changed the same words, Plain leaves your text alone and asks when you save.
+- **See what the agent changed.** When an agent rewrites a file, Plain shows what changed since you last read it: new words in green, a small red mark where text was removed (click it to put the text back). A bar under the tabs counts the changes, with arrows to go through them (⌥⌘G) and Mark as Seen (⌥⌘Y). What you last read stays on your Mac.
+- **Keep your unsaved edits.** When the agent changed other words than yours, its changes merge into your text. When you both changed the same words, the agent's lines show in a box under yours, with Keep mine and Take theirs.
 - **Leave notes for the agent.** Select a passage, ⌥⌘M, type. The note goes in the file as `<!-- note: … -->`. Then tell your agent "do my notes".
 - **Let the agent see what you changed** since its last write:
 
@@ -29,7 +32,7 @@ No settings, no themes, no autosave. On purpose.
   ```
 
 - **Files that move stay open.** A file an agent renames or moves keeps its tab.
-- **Links like `plan.md:42`** open at that line. ⇧⌘O jumps to a heading.
+- **Links like `plan.md:42`** open at that line. ⇧⌘O jumps to a heading. Type `@` to link another doc.
 - **Use Plain as your editor** for git commit messages, and for Ctrl-G in Claude Code and Codex:
 
   ```
