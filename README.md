@@ -6,7 +6,7 @@ Website: **[plainmac.com](https://plainmac.com)**, where you can try the editor 
 
 **[Download Plain](https://github.com/clementrog/plain/releases/latest/download/Plain.zip)** for macOS 26 on Apple Silicon. Signed and notarized. Unzip it and drag it to Applications.
 
-![Plain showing what an agent changed in a trip plan: new words in green, red marks where text was removed, a note, and the bar with 4 changes](plain.png)
+![Plain showing what Claude changed in plan.md: +4 −3 next to the file name, a green bar in the margin beside each changed line, the new words underlined in green, the change in focus with its old word struck in red and the Keep and Put back bar under it, and a note on the last task](plain.png)
 
 ## What it does
 
