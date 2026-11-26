@@ -2,6 +2,8 @@
 
 A very lightweight native Mac app to read and edit Markdown. Free. By [Clément Rog](https://clementrog.com).
 
+Website: **[plainmac.com](https://plainmac.com)**, where you can try the editor in your browser.
+
 **[Download Plain](https://github.com/clementrog/plain/releases/latest/download/Plain.zip)** for macOS 26 on Apple Silicon. Signed and notarized. Unzip it and drag it to Applications.
 
 ![Plain showing what an agent changed in a trip plan: new words in green, red marks where text was removed, a note, and the bar with 4 changes](plain.png)
